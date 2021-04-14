@@ -14,11 +14,11 @@ function greet(time){
   time.split(":");
   const hours = parseInt(time);
 
-    if(hours =< "12"){
+    if(hours <= "12"){
       return "Good Morning";
-    }else if(hours > "12" && hours =< "17"){
+    }else if(hours > "12" && hours <= "17"){
       return "Good Afternoon";
-    }else if (hours >= "17") {
+    }else if (hours > "17") {
       return "Good Evening";
     }
 }
