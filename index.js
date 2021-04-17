@@ -15,12 +15,9 @@ function greet(timeString){
     const splits = timeString.split(":");
     let parsed = parseInt(splits[0], 10);
 
-    if(parsed < 12)
-      return "Good Morning";
-      else if(12<parsed<17)
-           return"Good Afternoon";
-           else
-           return "Good Evening";
+    if ( parsed < 12) return "Good Morning"
+  if ( parsed > 17) return "Good Evening"
+  return "Good Afternoon"
 
 }
 /* Write your implementation of displayMessage() */
